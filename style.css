@@ -1,0 +1,82 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:0%;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    font-family: sans-serif;
+}
+
+.container{
+    background-color: #000000d0;
+    color: rgb(255, 255, 255);
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;   
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+button{
+    margin-left: 10px;
+    border-radius: 50px;
+    height: 2.5em;
+    width: 2.5em;
+    border: none;
+    outline: none;
+    background: #7c7c7c69;
+    color: white;
+}
+
+button:hover{
+    background: #d2d2d269;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+#search-bar{
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 60%;
+    background-color: #7c7c7c69;
+    color: white;
+    font-family: inherit;
+    border-radius: 19px;
+    padding-left: 20px;
+    font-size: 100%;
+    padding-top: 0;
+    text-transform: capitalize;
+}
+.temp{
+    margin-bottom: 0;
+}
+.t{
+    display: flex;
+}
+.middle{
+    display: flex;
+    align-items: center;
+}
+
+.loading{
+    visibility: hidden;
+    max-width: 20px;
+    position: relative;
+}
+
+.loading::after{
+    color: white;
+    visibility: visible;
+    content: "Loading...";
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
